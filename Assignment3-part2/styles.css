@@ -1,0 +1,30 @@
+html {
+  font-family: sans-serif;
+}
+
+.cool-box {
+  width: 200px;
+  height: 100px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem; /* The default font size in browsers is usually 16px. if 1rem means 16px, then 1.125rem is 1.125 × 16 = 18px. */
+
+  font-weight: bold;
+  background-color: #ff4d4d;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  border-radius: 10px;
+  border: 1px solid #cc0000;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0.2) 100%
+  );
+  box-shadow:
+      3px 3px 8px rgba(0, 0, 0, 0.3),
+      inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+      inset -2px -2px 5px rgba(0, 0, 0, 0.5);
+}
