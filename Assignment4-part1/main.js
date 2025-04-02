@@ -32,12 +32,11 @@ newStory = newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    const weight = `${Math.round(300/14)}stone`;
+    const temperature = `${Math.round((94-32) * (5/9))}centigrade`;
 
   }
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }  
-
