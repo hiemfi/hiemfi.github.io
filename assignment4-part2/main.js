@@ -20,11 +20,21 @@ imageFilenames.forEach(function(filename)){
 newImage.addEventListener('click',function(){
     displayedImage.setAttribute('src', `images/$filename}`)
     displayedImage.setAttribute('alt', altTexts[filename]);
+    thumbBar.appendChild(newImage)}
 
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-
-/* Wiring up the Darken/Lighten button */
+    btn.addEventListener('click', function() {
+        const currentClass = btn.getAttribute('class');  
+      
+        
+        if (currentClass === 'dark') {
+          btn.setAttribute('class', 'light');  
+          btn.textContent = 'Lighten';  
+          overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';  
+        } else {
+          btn.setAttribute('class', 'dark');  
+          btn.textContent = 'Darken';  
+          overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)'; 
+        }
+      });
+      
