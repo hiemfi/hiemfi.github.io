@@ -17,6 +17,10 @@ imageFilenames.forEach(function(filename)){
     newImage.setAttribute('alt', altTexts[filename]);
 }
 
+newImage.addEventListener('click',function(){
+    displayedImage.setAttribute('src', `images/$filename}`)
+    displayedImage.setAttribute('alt', altTexts[filename]);
+
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
