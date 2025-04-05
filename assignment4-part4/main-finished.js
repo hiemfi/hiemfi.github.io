@@ -1,5 +1,16 @@
 // set up canvas
 
+
+
+class Shape {
+    constructor(x, y, velX, velY) {
+      this.x = x;
+      this.y = y;
+      this.velX = velX;
+      this.velY = velY;
+    }
+  }
+  
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
