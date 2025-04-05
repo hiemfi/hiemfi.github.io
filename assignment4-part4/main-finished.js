@@ -61,7 +61,9 @@ class Ball extends Shape {
       this.x += this.velX;
       this.y += this.velY;
     }
-  
+    
+
+    
     collisionDetect() {
       for (const ball of balls) {
         if (!(this === ball) && ball.exists) {
@@ -104,6 +106,7 @@ class Ball extends Shape {
     }
   }
   
+  
 const balls = [];
 
 while (balls.length < 25) {
@@ -134,3 +137,5 @@ function loop() {
 }
 
 loop();
+
+
